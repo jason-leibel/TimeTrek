@@ -20,4 +20,19 @@
 - HTML / CSS / JavaScript
 - [Leaflet.js](https://leafletjs.com/) for map rendering
 - `Intl.DateTimeFormat` for timezone-based time formatting
+- [Astro](https://astro.build/) for static site generation
 
+---
+
+## 📦 Development
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+
+Astro will compile the project and serve it locally. Use `npm run build` to generate the static site.
