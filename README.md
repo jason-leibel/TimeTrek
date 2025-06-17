@@ -21,12 +21,3 @@
 - [Leaflet.js](https://leafletjs.com/) for map rendering
 - `Intl.DateTimeFormat` for timezone-based time formatting
 
----
-
-## 📦 Setup Instructions
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/timetrek.git
-cd timetrek
