@@ -10,17 +10,21 @@ import '../style.css';
   </head>
   <body>
     <h1>🕒 World Time Zone Map</h1>
+    <button id="toggle-theme">Toggle Dark Mode</button>
     <ul id="time-list"></ul>
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script is:inline>
       document.addEventListener('DOMContentLoaded', () => {
-        const map = L.map('map').setView([20, 0], 2);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        const lightLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
+        });
+        const darkLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+          attribution: '© OpenStreetMap contributors, © CARTO'
+        });
+
+        const map = L.map('map', { layers: [lightLayer] }).setView([20, 0], 2);
 
         const cities = [
           { name: 'New York', coords: [40.7128, -74.006], tz: 'America/New_York' },
@@ -63,6 +67,19 @@ import '../style.css';
 
         updateTimes();
         setInterval(updateTimes, 60000);
+
+        const toggle = document.getElementById('toggle-theme');
+        toggle.addEventListener('click', () => {
+          if (map.hasLayer(lightLayer)) {
+            map.removeLayer(lightLayer);
+            darkLayer.addTo(map);
+            document.body.classList.add('dark');
+          } else {
+            map.removeLayer(darkLayer);
+            lightLayer.addTo(map);
+            document.body.classList.remove('dark');
+          }
+        });
       });
     </script>
   </body>

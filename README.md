@@ -12,6 +12,7 @@
 - 🕒 Real-time local time display for multiple cities
 - 🔄 Automatic time updates every minute
 - 📱 Mobile-friendly layout
+- 🌙 Optional dark mode for easier night viewing
 
 ---
 
