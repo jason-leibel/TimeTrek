@@ -13,6 +13,7 @@
 - 🔄 Automatic time updates every minute
 - 📱 Mobile-friendly layout
 - 🌙 Optional dark mode for easier night viewing
+- 🌓 Live day/night shading overlay
 
 ---
 

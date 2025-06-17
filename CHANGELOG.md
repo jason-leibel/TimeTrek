@@ -8,4 +8,5 @@ All notable changes to this project will be documented in this file.
 - Additional pinned time zones on the map
 - Basic styling improvements
 - Dark mode toggle for map and page
+- Day/night map shading
 
