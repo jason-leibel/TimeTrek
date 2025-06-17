@@ -6,6 +6,41 @@ body {
     color: #333;
 }
 
+button#toggle-theme {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #007acc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#toggle-theme:hover {
+    background: #005ea6;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #121212 0%, #333 100%);
+    color: #f0f0f0;
+}
+
+body.dark h1 {
+    color: #64b5f6;
+}
+
+body.dark #map {
+    border-top-color: #64b5f6;
+}
+
+body.dark #time-list li {
+    background: #424242;
+}
+
+body.dark #time-list li:hover {
+    background: #616161;
+}
+
 h1 {
     color: #007acc;
     margin: 1rem 0;
