@@ -2,7 +2,7 @@
 
 **TimeTrek** is a lightweight, interactive timezone map that displays the current local time in major cities around the world. Built using Leaflet.js and the JavaScript `Intl.DateTimeFormat` API, it’s perfect for quickly checking global time differences at a glance.
 
-![screenshot](screenshot.png)
+![Screenshot 2025-06-17 173500](https://github.com/user-attachments/assets/0609159f-6872-49f0-bd77-ae6aafcb6a52)
 
 ---
 
